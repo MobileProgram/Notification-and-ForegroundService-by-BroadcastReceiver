@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="64dp">
+    <ImageView
+        android:id="@+id/img_song"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_song"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:id="@+id/tv_title_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="14sp"
+            android:textColor="@color/black">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_single_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="13sp"
+            android:textColor="#5A5959">
+
+        </TextView>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_clear"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/clear"></ImageView>
+    <ImageView
+        android:id="@+id/img_play_or_pause"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/img_clear"
+        android:src="@drawable/play"></ImageView>
+</RelativeLayout>
